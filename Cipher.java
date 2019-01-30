@@ -19,6 +19,18 @@ public abstract class Cipher {
         }
     }
 
+    public final void decrypt(String message) {
+
+    }
+
+    public String getEncodedMessage() {
+        return encrypted_message.toString();
+    }
+
+    public String getDecodedMessage() {
+        return decrypted_message.toString();
+    }
+
     public abstract String encode(String s);
     public abstract String decode(String s);
 }

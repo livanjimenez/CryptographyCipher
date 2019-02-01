@@ -4,10 +4,10 @@ public class Reverser extends Transpose {
     }
 
     public String reverseText(String word) {
-
+        return word;
     }
 
     public String decode(String word) {
-        
+        return word;
     }
 }

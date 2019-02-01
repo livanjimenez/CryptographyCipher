@@ -11,7 +11,7 @@ public class Caesar extends Cipher {
         return code(word, Constants.DECODE_SHIFT);
     }
 
-    public code(String word, int SHIFT) {
+    public String code(String word, int SHIFT) {
         StringBuffer result = new StringBuffer();
 
         for (int i = 0; i < word.length(); i++) {

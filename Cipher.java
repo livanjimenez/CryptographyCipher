@@ -20,7 +20,14 @@ public abstract class Cipher {
     }
 
     public final void decrypt(String message) {
+        decrypted_message = new StringBuffer();
+        StringTokenizer words = new StringTokenizer(message);
 
+        while (words.hasMoreTokens()) {
+            String s = words.nextToken();
+            s = decode(s);
+            decrypted_message.append(s);
+        }
     }
 
     public String getEncodedMessage() {

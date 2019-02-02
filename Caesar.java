@@ -26,6 +26,8 @@ public class Caesar extends Cipher {
     public char determineCharacter(char ch, final int shift) {
         if (Character.isUpperCase(ch)) {
             ch = (char)('A' + (ch - 'A' + shift) % Constants.WRAP_AROUND);
+        } else {
+            ch = (char)('a' + (ch - 'a' + shift) % Constants.WRAP_AROUND);
         }
 
         return ch;

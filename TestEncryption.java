@@ -16,6 +16,22 @@ public class TestEncryption {
         code = c.getEncodedMessage();
         output += "\nCaesar Cipher\nThe encrypted message is \n" + code + "\n";
         c.decrypt(code);
+        code = c.getDecodedMessage();
+        output += "The decrypted message is \n" + code + "\n";
+
+        c = new Transpose(text);
+        c.encrypt();
+        code = c.getEncodedMessage();
+        output += "\nTranspose \nThe encrypted Transpose message is \n" + code + "\n";
+        c.decrypt(code);
+        code = c.getDecodedMessage();
+        output += "The decrypted Transpose message is \n" + code + "\n";
+
+        c = new Reverser(text);
+        c.encrypt();
+        code = c.getEncodedMessage();
+
+        display(output);
     }
 
     static void display(String s) {

@@ -5,13 +5,12 @@ public class Transpose extends Cipher {
 
     public String encode(String word) {
         StringBuffer result = new StringBuffer();
-
         result.reverse();
-
         return result.toString();
     }
 
     public String decode(String word) {
-        return word;
+        StringBuffer result = new StringBuffer();
+        return result.toString();
     }
 }

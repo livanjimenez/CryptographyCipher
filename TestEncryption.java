@@ -16,7 +16,7 @@ public class TestEncryption {
         code = c.getEncodedMessage();
         output += "\nCaesar Cipher\nThe encrypted message is \n" + code + "\n";
         c.decrypt(code);
-        code = c.getDecodedMessage();
+        code = c.getDecodedMessage();   
         output += "The decrypted message is \n" + code + "\n";
 
         c = new Transpose(text);

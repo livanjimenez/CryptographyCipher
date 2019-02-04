@@ -4,13 +4,14 @@ public class Transpose extends Cipher {
     }
 
     public String encode(String word) {
-        StringBuffer result = new StringBuffer();
+        StringBuffer result = new StringBuffer(word);
         result.reverse();
         return result.toString();
     }
 
     public String decode(String word) {
-        StringBuffer result = new StringBuffer();
+        StringBuffer result = new StringBuffer(word);
+        result.reverse();
         return result.toString();
     }
 }

@@ -25,7 +25,7 @@ public abstract class Cipher {
 
         while (words.hasMoreTokens()) {
             String s = words.nextToken();
-            s = decode(s);
+            s = decode(s) + " ";
             decrypted_message.append(s);
         }
     }

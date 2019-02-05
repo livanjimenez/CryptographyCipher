@@ -4,10 +4,18 @@ public class Reverser extends Transpose {
     }
 
     public String reverseText(String word) {
-        return word;
+        StringBuffer result = new StringBuffer(word);
+
+        for (int i = 0; i < result.length(); i++) {
+            result.reverse();
+        }
+        
+        return result.toString();
     }
 
     public String decode(String word) {
-        return word;
+        StringBuffer result = new StringBuffer(word);
+        result.reverse();
+        return result.toString();
     }
 }

@@ -5,11 +5,7 @@ public class Reverser extends Transpose {
 
     public String reverseText(String word) {
         StringBuffer result = new StringBuffer(word);
-
-        for (int i = 0; i < result.length(); i++) {
-            result.reverse();
-        }
-        
+        result.reverse();
         return result.toString();
     }
 

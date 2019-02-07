@@ -31,11 +31,9 @@ public class TestEncryption {
 
         c = new Reverser(text);
         c.encrypt();
-        code = c.getEncodedMessage();
         code = r.reverseText(code);
         output += "\nReverser \nThe encrypted Reverse message is \n" + code + "\n";
         c.decrypt(code);
-        code = c.getDecodedMessage();
         code = r.decode(code);
         output += "The decrypted Reverse message is \n" + code;
 

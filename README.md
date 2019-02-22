@@ -1,2 +1,2 @@
 # CryptographyCipher
-## School assignment where we use different forms of ciphering a string.
+#### School assignment where we use different forms of ciphering a string of data.
